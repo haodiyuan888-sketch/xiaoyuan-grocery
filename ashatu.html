@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阿斯哈图石林 - 赤峰文旅</title>
+    <link rel="stylesheet" href="./css/demoForHomework.css">
+    <style>
+        .page-wrap { max-width: 1040px; margin: 62px auto 0; padding: 40px 20px; }
+        .hero { position: relative; border-radius: 18px; overflow: hidden; margin-bottom: 30px; }
+        .hero img { width: 100%; height: 420px; object-fit: cover; display: block; }
+        .hero .title { position: absolute; bottom: 0; left: 0; right: 0; padding: 70px 40px 30px; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: #fff; }
+        .hero .title h1 { font-size: 2.4rem; margin-bottom: 6px; letter-spacing: 2px; }
+        .hero .title span { font-size: 1rem; opacity: 0.9; }
+        .info-row { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; background: #fff; border-radius: 14px; padding: 18px 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
+        .info-tag { background: #faf6ef; border: 1px solid #e8d5b0; border-radius: 8px; padding: 8px 16px; font-size: 0.9rem; color: #5c4d3c; white-space: nowrap; }
+        .content-card { background: #fff; border-radius: 16px; padding: 36px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+        .content-card h2 { color: #1a3a2a; font-size: 1.5rem; margin-bottom: 16px; padding-left: 14px; border-left: 4px solid #daa520; }
+        .content-card p { color: #555; line-height: 2; font-size: 1.05rem; text-indent: 2em; margin-bottom: 14px; }
+        .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 24px; }
+        .gallery img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; transition: transform 0.3s ease; }
+        .gallery img:hover { transform: scale(1.05); }
+        .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 16px; }
+        .feature-item { background: #faf6ef; border-radius: 12px; padding: 20px; text-align: center; border: 1px solid #e8d5b0; }
+        .feature-item .icon { font-size: 2rem; margin-bottom: 8px; }
+        .feature-item h4 { color: #1a3a2a; margin-bottom: 6px; }
+        .feature-item p { color: #6b5e4a; font-size: 0.9rem; line-height: 1.6; text-indent: 0; }
+        @media (max-width: 768px) {
+            .page-wrap { padding: 20px 12px; }
+            .hero img { height: 240px; }
+            .content-card { padding: 20px 16px; }
+            .gallery { grid-template-columns: 1fr 1fr; }
+            .feature-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+<div class="side-panel side-left"><div class="side-section"><h4>📍 快速导航</h4><a href="index.html" class="side-nav-item">🏠 回到首页</a><a href="index.html#section1" class="side-nav-item">🌿 草原风情</a><a href="index.html#section2" class="side-nav-item">🎯 文旅锦囊</a><a href="index.html#section3" class="side-nav-item">⭐ 更多推荐</a><a href="guide-travel.html" class="side-nav-item">🗺️ 旅游指南</a></div><div class="side-section"><h4>🏷️ 热门标签</h4><div class="side-tags"><a href="wulanbutong.html">乌兰布统</a><a href="ashatu.html">阿斯哈图</a><a href="dalinuoer.html">达里诺尔</a><a href="food.html#kaoyang">烤全羊</a><a href="nadamu.html">那达慕</a><a href="hongshan-wenhua.html">红山文化</a><a href="horse-riding.html">骑马</a><a href="keshiketeng-wenquan.html">温泉</a><a href="culture.html#menggubao">蒙古包</a></div></div></div><div class="side-panel side-right"><div class="side-section"><h4>💡 旅游贴士</h4><div class="tip-mini"><p>🕐 最佳季节：6-10月</p><p>🌡️ 夏季均温：20°C</p><p>🧥 早晚温差大备外套</p><p>📸 日出日落最出片</p></div></div><button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">⬆ 回到顶部</button></div>
+    <div class="navi">
+        <div class="logoInfo"><div><a href="index.html"><img class="logo" src="./image/辽阔内蒙.png" alt="logo"></a></div><div><span class="logotext">赤峰文旅</span></div></div>
+        <ul class="nav-links">
+<li><a href="index.html">首页</a></li><li><a href="index.html#section1">草原风情</a></li><li><a href="index.html#section2">文旅锦囊</a></li><li><a href="index.html#section3">更多推荐</a></li><li><a href="gallery.html">影像赤峰</a></li><li><a href="food.html">特色美食</a></li><li><a href="guide-travel.html">旅游指南</a></li><li><a href="services.html">旅游服务</a></li>
+        </ul>
+    </div>
+
+    <div class="page-wrap">
+
+        <div class="hero">
+            <img src="./image/赤峰市阿斯哈图石林景区.png" alt="阿斯哈图石林">
+            <div class="title"><h1>阿斯哈图石林</h1><span>国家AAAAA级景区 · 世界地质公园 · 亿年地质奇观</span></div>
+        </div>
+
+        <div class="info-row">
+            <span class="info-tag">景区等级：AAAAA</span>
+            <span class="info-tag">开放时间：8:00-17:30</span>
+            <span class="info-tag">门票：140元/人</span>
+            <span class="info-tag">建议游玩：半天至1天</span>
+            <span class="info-tag">最佳季节：6月-10月</span>
+        </div>
+
+        <div class="content-card">
+            <h2>景区概况</h2>
+            <p>"阿斯哈图"是蒙古语，意为"险峻的岩石"。阿斯哈图石林位于赤峰市克什克腾旗北部，大兴安岭山脉的北大山上，海拔约1700米，是目前世界上独有的花岗岩地貌景观。这些形态各异的巨石矗立在山脊之上，千姿百态、气势磅礴，宛如一座天然的巨型雕塑博物馆。2005年被联合国教科文组织批准为世界地质公园，2018年晋升为国家5A级旅游景区。</p>
+            <p>与云南石林的石灰岩喀斯特地貌不同，阿斯哈图石林是由第四纪冰川作用形成的花岗岩石林，在全世界独一无二。经过亿万年的冰川刨蚀、寒冻风化，坚硬的花岗岩被雕琢成形态各异的石柱、石墙、石塔和石笋，有的如城堡耸立、有的如巨兽蹲伏、有的如利剑指天，令人叹为观止。</p>
+            <div class="gallery">
+                <img src="./image/6.jpg" alt="石林远眺">
+                <img src="./image/7.jpg" alt="石林近景">
+                <img src="./image/8.jpg" alt="石林奇观">
+                <img src="./image/9.jpg" alt="石林日出">
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>三大景区特色</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="icon">🪨</div>
+                    <h4>地质奇观</h4>
+                    <p>世界独有的花岗岩石林地貌，冰川作用形成的自然奇迹，亿万年地质演变的见证。</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🗿</div>
+                    <h4>象形石林</h4>
+                    <p>千姿百态的石柱石塔，天然形成的"七仙女""罗汉阵""骆驼峰"等象形景观。</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🌄</div>
+                    <h4>高山草原</h4>
+                    <p>石林与高山草甸交相辉映，夏季野花遍野，秋季白桦金黄，景色层次丰富。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>游览指南</h2>
+            <p>景区设有三条游览路线：一线天—将军床—七仙女路线最为经典，全程约2小时；骆驼峰—罗汉阵路线适合摄影爱好者，光线下石林更显雄奇；高山草原环路可乘景区观光车游览，全程约1.5小时。建议早晨抵达景区，此时光线柔和，石林层次分明，是拍照的最佳时机。景区海拔较高，早晚温差大，请备好防风外套。</p>
+        </div>
+
+        
+<a href="index.html" class="back-home">← 返回首页</a>
+    </div>
+</body>
+</html>

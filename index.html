@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赤峰文旅——草原上的明珠</title>
+    <link rel="stylesheet" href="./css/demoForHomework.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 导航栏 -->
+        <div class="navi">
+            <div class="logoInfo">
+                <div>
+                    <img class="logo" src="./image/辽阔内蒙.png" alt="赤峰文旅logo">
+                </div>
+                <div>
+                    <span class="logotext">赤峰文旅</span>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" id="homeLink">首页</a></li>
+                <li><a href="#section1" class="navLink">草原风情</a></li>
+                <li><a href="#section2" class="navLink">文旅锦囊</a></li>
+                <li><a href="#section3" class="navLink">更多推荐</a></li>
+                <li><a href="gallery.html" class="navLink">影像赤峰</a></li>
+                <li><a href="food.html" class="navLink">特色美食</a></li>
+                <li><a href="guide-travel.html" class="navLink">旅游指南</a></li>
+                <li><a href="services.html" class="navLink">旅游服务</a></li>
+            </ul>
+        </div>
+
+        <!-- 轮播图 -->
+        <div class="content">
+            <div class="carousel">
+                    <button class="carousel-arrow carousel-prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="carousel-arrow carousel-next" onclick="nextSlide()">&#10095;</button>
+                <div class="carousel-images">
+                    <img src="./image/1.jpg" alt="草原风光1">
+                    <img src="./image/2.jpg" alt="草原风光2">
+                    <img src="./image/3.jpg" alt="草原风光3">
+                    <img src="./image/4.jpg" alt="草原风光4">
+                    <img src="./image/5.jpg" alt="草原风光5">
+                    <img src="./image/6.jpg" alt="草原风光6">
+                    <img src="./image/7.jpg" alt="草原风光7">
+                    <img src="./image/8.jpg" alt="草原风光8">
+                    <img src="./image/9.jpg" alt="草原风光9">
+                    <img src="./image/10.jpg" alt="草原风光10">
+                    <img src="./image/11.jpg" alt="草原风光11">
+                    <img src="./image/12.jpg" alt="草原风光12">
+                    <img src="./image/13.jpg" alt="草原风光13">
+                    <img src="./image/14.jpg" alt="草原风光14">
+                    <img src="./image/15.jpg" alt="草原风光15">
+                    <img src="./image/16.jpg" alt="草原风光16">
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>
+                    <span class="dot" onclick="currentSlide(9)"></span>
+                    <span class="dot" onclick="currentSlide(10)"></span>
+                    <span class="dot" onclick="currentSlide(11)"></span>
+                    <span class="dot" onclick="currentSlide(12)"></span>
+                    <span class="dot" onclick="currentSlide(13)"></span>
+                    <span class="dot" onclick="currentSlide(14)"></span>
+                    <span class="dot" onclick="currentSlide(15)"></span>
+                    <span class="dot" onclick="currentSlide(16)"></span>
+                </div>
+            </div>
+
+            <div class="innerContainer">
+                <div class="main-row">
+                    <!-- 左侧边栏 -->
+                    <div class="side-panel side-left" id="sideLeft">
+                        <div class="side-section">
+                            <h4>📍 快速导航</h4>
+                            <a href="#" class="side-nav-item">🏠 回到首页</a>
+                            <a href="#section1" class="side-nav-item">🌿 草原风情</a>
+                            <a href="#section2" class="side-nav-item">🎯 文旅锦囊</a>
+                            <a href="#section3" class="side-nav-item">⭐ 更多推荐</a>
+                            <a href="guide-travel.html" class="side-nav-item">🗺️ 旅游指南</a>
+                        </div>
+                        <div class="side-section">
+                            <h4>🏷️ 热门标签</h4>
+                            <div class="side-tags">
+                                <a href="wulanbutong.html">乌兰布统</a>
+                                <a href="ashatu.html">阿斯哈图</a>
+                                <a href="dalinuoer.html">达里诺尔</a>
+                                <a href="food.html#kaoyang">烤全羊</a>
+                                <a href="nadamu.html">那达慕</a>
+                                <a href="hongshan-wenhua.html">红山文化</a>
+                                <a href="horse-riding.html">骑马</a>
+                                <a href="keshiketeng-wenquan.html">温泉</a>
+                                <a href="culture.html#menggubao">蒙古包</a>
+                            </div>
+                        </div>
+                        <div class="side-section">
+                            <h4>🌤️ 今日赤峰</h4>
+                            <div class="weather-info">
+                                <span class="weather-temp">26°</span>
+                                <span class="weather-desc">晴 微风</span>
+                            </div>
+                            <p class="weather-tip">正值草原最美季节，适宜出行</p>
+                        </div>
+                    </div>
+
+                    <!-- 主内容区 -->
+                    <div class="main-content">
+                <!-- 首页：热门景点 + 关于赤峰 -->
+                <div class="home">
+                    <table class="hotAttractions" cellspacing="0">
+                        <th>赤峰热门景点</th>
+                        <tr class="hotText">
+                            <td><span class="num orderFirst">1</span><a href="wulanbutong.html">乌兰布统草原</a></td>
+                            <td class="prot"><span>5A景区</span></td>
+                        </tr>
+                        <tr class="hotText">
+                            <td><span class="num orderSecond">2</span><a href="ashatu.html">阿斯哈图石林</a></td>
+                            <td class="prot"><span>地质公园</span></td>
+                        </tr>
+                        <tr class="hotText">
+                            <td><span class="num orderThird">3</span><a href="dalinuoer.html">达里诺尔湖</a></td>
+                            <td class="prot"><span>保护区</span></td>
+                        </tr>
+                    </table>
+
+                    <div class="aboutDX">
+                        <h4>关于赤峰 / About Chifeng</h4>
+                        <video loop="loop" controls="controls" width="500px">
+                            <source src="./video/welcome.mp4" type="video/mp4">
+                        </video>
+                        <div class="desc">
+                            赤峰市，内蒙古自治区下辖地级市，位于内蒙古东南部，蒙冀辽三省交汇处。赤峰因城区东北部赭红色山峰而得名，是中华文明的重要发祥地之一，拥有近万年的红山文化历史。这里草原辽阔、大漠壮美、石林奇绝，是镶嵌在祖国北疆的一颗璀璨明珠。
+                            <span><a href="about-chifeng.html">查看更多</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 草原风情 -->
+                <div class="sections-wrapper">
+                    <section id="section1" class="content-section">
+                        <h1 class="main-title">草原风情</h1>
+
+                        <div class="section-block">
+                            <h2 class="sub-title">草原美食</h2>
+                            <div class="text-image-wrapper">
+                                <div class="sub-section">
+                                    <a href="food.html#kaoyang" class="item-title">烤全羊——蒙古族待客最高礼仪</a>
+                                    <a href="food.html#shoubarou" class="item-title">手把肉——原汁原味的草原味道</a>
+                                    <a href="food.html#naicha" class="item-title">蒙古奶茶——咸香浓郁的传统饮品</a>
+                                    <a href="food.html#naidofu" class="item-title">奶豆腐——草原上的奶酪</a>
+                                    <a href="food.html#niurougan" class="item-title">风干牛肉——驰名中外的草原特产</a>
+                                </div>
+                                <div class="image-grid-2x2">
+                                    <img src="./image/烤全羊.png" alt="烤全羊">
+                                    <img src="./image/手把肉.png" alt="手把肉">
+                                    <img src="./image/蒙古奶茶.png" alt="蒙古奶茶">
+                                    <img src="./image/奶豆腐.png" alt="奶豆腐">
+                                </div>
+                            </div>
+                            <div class="section-intro">
+                                <p>蒙古族饮食文化源远流长，以肉食和奶食为主，追求食材本真之味。<strong>烤全羊</strong>是招待贵宾的至高礼节，<strong>手把肉</strong>诠释了草原儿女的豪迈本色，一碗热腾腾的<strong>蒙古奶茶</strong>温暖着每一个清晨，<strong>奶豆腐</strong>与<strong>风干牛肉</strong>则是游牧智慧的味觉结晶。每一道美食都承载着草原上千年不变的热情与真诚。</p>
+                                <a href="food.html" class="intro-link">查看详情 →</a>
+                            </div>
+                        </div>
+
+                        <div class="section-block">
+                            <h2 class="sub-title">历史名人</h2>
+                            <div class="text-image-wrapper">
+                                <div class="sub-section">
+                                    <a href="celebrities.html#chengjisihan" class="item-title">成吉思汗——一代天骄</a>
+                                    <a href="celebrities.html#xiaozhuang" class="item-title">孝庄文皇后——清朝杰出女政治家</a>
+                                    <a href="celebrities.html#senggelinqin" class="item-title">僧格林沁——晚清名将</a>
+                                    <a href="celebrities.html#gadameilin" class="item-title">嘎达梅林——草原英雄</a>
+                                </div>
+                                <div class="image-grid-2x2">
+                                    <img src="./image/成吉思汗.png" alt="成吉思汗">
+                                    <img src="./image/孝庄文皇后.png" alt="孝庄文皇后">
+                                    <img src="./image/僧格林沁.png" alt="僧格林沁">
+                                    <img src="./image/嘎达梅林.png" alt="嘎达梅林">
+                                </div>
+                            </div>
+                            <div class="section-intro">
+                                <p>赤峰是蒙古族文化的重要传承地，草原上涌现出众多影响历史进程的杰出人物。<strong>成吉思汗</strong>统一蒙古各部开创帝国伟业，<strong>孝庄文皇后</strong>以非凡智慧辅佐三代帝王，<strong>僧格林沁</strong>率蒙古骑兵抗击外侮扬我国威，<strong>嘎达梅林</strong>用生命捍卫草原牧人的家园。他们是从草原走出的英雄儿女，在中华历史长卷上留下了浓墨重彩的篇章。</p>
+                                <a href="celebrities.html" class="intro-link">查看详情 →</a>
+                            </div>
+                        </div>
+
+                        <div class="section-block">
+                            <h2 class="sub-title">蒙古族文化</h2>
+                            <div class="text-image-wrapper">
+                                <div class="sub-section">
+                                    <a href="culture.html#nadamu" class="item-title">那达慕大会——草原上的奥林匹克</a>
+                                    <a href="culture.html#matouqin" class="item-title">马头琴——悠扬的草原天籁</a>
+                                    <a href="culture.html#menggubao" class="item-title">蒙古包——游牧民族的智慧结晶</a>
+                                    <a href="culture.html#fushi" class="item-title">蒙古族服饰——华丽的民族瑰宝</a>
+                                    <a href="culture.html#aobao" class="item-title">祭敖包——古老的祈福仪式</a>
+                                    <a href="culture.html#cixiu" class="item-title">蒙古族刺绣——精美的传统手工艺</a>
+                                </div>
+                                <div class="image-grid-2x2">
+                                    <img src="./image/那达慕大会.png" alt="那达慕大会">
+                                    <img src="./image/马头琴.png" alt="马头琴">
+                                    <img src="./image/蒙古包.png" alt="蒙古包">
+                                    <img src="./image/蒙古族服饰.png" alt="蒙古族服饰">
+                                </div>
+                            </div>
+                            <div class="section-intro">
+                                <p>蒙古族文化是草原上绽放的璀璨瑰宝，凝聚着游牧民族千年的智慧与信仰。盛大的<strong>那达慕大会</strong>展现草原儿女的勇武豪情，悠扬的<strong>马头琴</strong>诉说着古老的草原传说，精巧的<strong>蒙古包</strong>诠释了天人合一的居住哲学，华丽的<strong>蒙古族服饰</strong>与<strong>刺绣</strong>承载着民族审美，庄严的<strong>祭敖包</strong>仪式传递着对天地自然的敬畏。每一项文化遗产都是蒙古族先民留给世界的珍贵礼物。</p>
+                                <a href="culture.html" class="intro-link">查看详情 →</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 文旅锦囊 -->
+                    <section id="section2" class="info-section">
+                        <h2 class="section-title">文旅锦囊</h2>
+                        <p class="section-desc">为您精心准备的赤峰旅行必备指南，让旅途更加轻松惬意</p>
+                        <div class="brocade-grid">
+                            <a href="travel-notes.html" class="brocade-card">
+                                <div class="brocade-icon-wrap"><span>📝</span></div>
+                                <div class="brocade-body">
+                                    <h3>热门游记</h3>
+                                    <p>真实游客分享的赤峰旅行故事与体验，草原风光、石林探秘、大漠驼铃，带你身临其境感受赤峰之美。</p>
+                                    <span class="brocade-link">浏览游记 →</span>
+                                </div>
+                            </a>
+                            <a href="guide.html" class="brocade-card">
+                                <div class="brocade-icon-wrap"><span>📖</span></div>
+                                <div class="brocade-body">
+                                    <h3>攻略分享</h3>
+                                    <p>精心整理的行程规划、住宿推荐、美食地图和拍照打卡点，助你轻松规划完美的赤峰之旅。</p>
+                                    <span class="brocade-link">查看攻略 →</span>
+                                </div>
+                            </a>
+                            <a href="notice.html" class="brocade-card">
+                                <div class="brocade-icon-wrap"><span>📢</span></div>
+                                <div class="brocade-body">
+                                    <h3>通知公告</h3>
+                                    <p>景区开放时间、门票优惠、那达慕大会安排、季节性活动等第一手资讯，出行前必读。</p>
+                                    <span class="brocade-link">查看公告 →</span>
+                                </div>
+                            </a>
+                            <a href="transport.html" class="brocade-card">
+                                <div class="brocade-icon-wrap"><span>🚗</span></div>
+                                <div class="brocade-body">
+                                    <h3>周边交通</h3>
+                                    <p>航空、高铁、自驾、客运全覆盖，各景区之间的交通接驳指南，让你出行无忧。</p>
+                                    <span class="brocade-link">查看交通 →</span>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+
+                    <!-- 更多推荐 -->
+                    <section id="section3" class="recommend-section">
+                        <h2 class="section-title">更多赤峰推荐</h2>
+                        <p class="section-desc">草原之外，赤峰还有更多值得探索的宝藏</p>
+                        <div class="recommend-grid">
+                            <a href="yulong-shahu.html" class="recommend-card">
+                                <div class="recommend-img" style="background-image: url('./image/玉龙沙湖.jpg')"></div>
+                                <div class="recommend-body">
+                                    <h3>玉龙沙湖 <span class="card-arrow">→</span></h3>
+                                    <p>集沙漠、湖泊、草原于一体的独特地貌，沙水相连的塞外奇观。</p>
+                                </div>
+                            </a>
+                            <a href="hongshan-wenhua.html" class="recommend-card">
+                                <div class="recommend-img" style="background-image: url('./image/红山文化遗址.jpg')"></div>
+                                <div class="recommend-body">
+                                    <h3>红山文化遗址 <span class="card-arrow">→</span></h3>
+                                    <p>中华文明重要源头，距今五六千年。"中华第一龙"出土地。</p>
+                                </div>
+                            </a>
+                            <a href="huanggangliang.html" class="recommend-card">
+                                <div class="recommend-img" style="background-image: url('./image/黄岗梁国家森林公园.png')"></div>
+                                <div class="recommend-body">
+                                    <h3>黄岗梁国家森林公园 <span class="card-arrow">→</span></h3>
+                                    <p>大兴安岭最高峰所在地，四季景色各异，户外爱好者天堂。</p>
+                                </div>
+                            </a>
+                            <a href="keshiketeng-wenquan.html" class="recommend-card">
+                                <div class="recommend-img" style="background-image: url('./image/克什克腾温泉.jpg')"></div>
+                                <div class="recommend-body">
+                                    <h3>克什克腾温泉 <span class="card-arrow">→</span></h3>
+                                    <p>天然地热温泉，水质富含矿物质。草原深处的养生体验。</p>
+                                </div>
+                            </a>
+                            <a href="nadamu.html" class="recommend-card">
+                                <div class="recommend-img" style="background-image: url('./image/那达慕盛会.jpg')"></div>
+                                <div class="recommend-body">
+                                    <h3>那达慕盛会 <span class="card-arrow">→</span></h3>
+                                    <p>草原上的奥林匹克，赛马、摔跤、射箭，感受蒙古族文化。</p>
+                                </div>
+                            </a>
+                            <a href="gonggeer-caoyuan.html" class="recommend-card">
+                                <div class="recommend-img" style="background-image: url('./image/贡格尔草原.jpg')"></div>
+                                <div class="recommend-body">
+                                    <h3>贡格尔草原 <span class="card-arrow">→</span></h3>
+                                    <p>水草丰美的天然牧场，宁静原始的深度草原体验之地。</p>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+                    </div>
+
+                    <!-- 右侧边栏 -->
+                    <div class="side-panel side-right" id="sideRight">
+                        <div class="side-section">
+                            <h4>💡 旅游贴士</h4>
+                            <div class="tip-mini">
+                                <p>🕐 最佳季节：6-10月</p>
+                                <p>🌡️ 夏季均温：20°C</p>
+                                <p>🧥 早晚温差大备外套</p>
+                                <p>📸 日出日落最出片</p>
+                            </div>
+                        </div>
+                        <div class="side-section">
+                            <h4>📊 景区热度</h4>
+                            <div class="hot-bar">
+                                <div class="hot-row"><span>乌兰布统</span><span class="bar"><i style="width:96%"></i></span></div>
+                                <div class="hot-row"><span>阿斯哈图</span><span class="bar"><i style="width:88%"></i></span></div>
+                                <div class="hot-row"><span>达里诺尔</span><span class="bar"><i style="width:82%"></i></span></div>
+                                <div class="hot-row"><span>玉龙沙湖</span><span class="bar"><i style="width:78%"></i></span></div>
+                                <div class="hot-row"><span>那达慕</span><span class="bar"><i style="width:91%"></i></span></div>
+                            </div>
+                        </div>
+                        <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="回到顶部">⬆</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/demoForHomework.js"></script>
+</body>
+</html>

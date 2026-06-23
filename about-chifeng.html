@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赤峰市详细介绍 - 赤峰文旅</title>
+    <link rel="stylesheet" href="./css/demoForHomework.css">
+    <style>
+        .page-wrap { max-width: 1040px; margin: 62px auto 0; padding: 40px 20px; }
+        .hero { position: relative; border-radius: 18px; overflow: hidden; margin-bottom: 28px; }
+        .hero img { width: 100%; height: 380px; object-fit: cover; display: block; }
+        .hero .title { position: absolute; bottom: 0; left: 0; right: 0; padding: 60px 40px 30px; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: #fff; }
+        .hero .title h1 { font-size: 2.4rem; letter-spacing: 2px; margin-bottom: 4px; }
+        .hero .title span { font-size: 1rem; opacity: 0.9; }
+
+        .quick-nav { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 28px; background: #fff; border-radius: 14px; padding: 14px 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
+        .quick-nav a { text-decoration: none; color: #5c4d3c; padding: 5px 12px; border-radius: 8px; font-size: 0.88rem; border: 1px solid #e8d5b0; transition: all 0.2s ease; white-space: nowrap; }
+        .quick-nav a:hover { background: #daa520; color: #fff; border-color: #daa520; }
+
+        .info-card { background: #fff; border-radius: 16px; padding: 34px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+        .info-card h2 { color: #1a3a2a; font-size: 1.5rem; margin-bottom: 20px; padding-left: 14px; border-left: 4px solid #daa520; }
+        .info-card p { color: #555; line-height: 2; font-size: 1rem; text-indent: 2em; margin-bottom: 14px; }
+        .info-card p strong { color: #1a3a2a; }
+
+        .overview-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 20px; }
+        .ov-item { background: #faf6ef; border: 1px solid #e8d5b0; border-radius: 12px; padding: 18px 14px; text-align: center; }
+        .ov-item .val { font-size: 1.5rem; font-weight: 700; color: #daa520; margin-bottom: 4px; }
+        .ov-item .lbl { font-size: 0.85rem; color: #6b5e4a; }
+
+        .img-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 20px 0; }
+        .img-row img { width: 100%; height: 240px; object-fit: cover; border-radius: 12px; }
+
+        .dist-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+        .dist-item { background: #faf6ef; border: 1px solid #e8d5b0; border-radius: 10px; padding: 12px 10px; text-align: center; font-size: 0.88rem; color: #5c4d3c; }
+        .dist-item strong { color: #1a3a2a; display: block; margin-bottom: 2px; }
+
+        .culture-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+        .cul-item { display: flex; gap: 14px; background: #faf6ef; border: 1px solid #e8d5b0; border-radius: 12px; padding: 18px; align-items: flex-start; }
+        .cul-item .ic { font-size: 2rem; flex-shrink: 0; }
+        .cul-item h4 { color: #1a3a2a; margin-bottom: 4px; }
+        .cul-item p { color: #6b5e4a; font-size: 0.9rem; line-height: 1.6; text-indent: 0; }
+
+        .timeline { position: relative; padding-left: 28px; }
+        .timeline::before { content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 2px; background: #e8d5b0; }
+        .tl-item { position: relative; margin-bottom: 16px; padding-left: 12px; }
+        .tl-item::before { content: ''; position: absolute; left: -24px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: #daa520; }
+        .tl-item .era { font-weight: 700; color: #b8860b; font-size: 0.95rem; margin-bottom: 4px; }
+        .tl-item p { color: #5c4d3c; font-size: 0.93rem; line-height: 1.7; text-indent: 0; }
+
+        @media (max-width: 768px) {
+            .page-wrap { padding: 20px 12px; } .hero img { height: 240px; }
+            .info-card { padding: 20px 16px; }
+            .overview-grid { grid-template-columns: repeat(2, 1fr); }
+            .dist-grid { grid-template-columns: repeat(2, 1fr); }
+            .culture-grid { grid-template-columns: 1fr; }
+            .img-row { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="navi">
+        <div class="logoInfo"><div><a href="index.html"><img class="logo" src="./image/辽阔内蒙.png" alt="logo"></a></div><div><span class="logotext">赤峰文旅</span></div></div>
+        <ul class="nav-links">
+            <li><a href="index.html">首页</a></li><li><a href="index.html#section1">草原风情</a></li><li><a href="index.html#section2">文旅锦囊</a></li><li><a href="index.html#section3">更多推荐</a></li>
+            <li><a href="gallery.html">影像赤峰</a></li><li><a href="food.html">特色美食</a></li>
+            <li><a href="guide-travel.html">旅游指南</a></li><li><a href="services.html">旅游服务</a></li>
+        </ul>
+    </div>
+
+    <div class="page-wrap">
+        <div class="hero">
+            <img src="./image/赤峰市.png" alt="赤峰市">
+            <div class="title"><h1>赤峰市</h1><span>玉龙之乡 · 中国有色金属之乡 · 中国优秀旅游城市</span></div>
+        </div>
+
+        <div class="quick-nav">
+            <a href="#overview">城市概况</a><a href="#history">历史沿革</a><a href="#geo">地理气候</a>
+            <a href="#dist">行政区划</a><a href="#econ">经济发展</a><a href="#culture">历史文化</a>
+            <a href="#tourism">风景名胜</a><a href="#transport">交通运输</a>
+        </div>
+
+        <!-- 城市概况 -->
+        <div class="info-card" id="overview">
+            <h2>城市概况</h2>
+            <div class="overview-grid">
+                <div class="ov-item"><div class="val">393.1万</div><div class="lbl">常住人口（2024）</div></div>
+                <div class="ov-item"><div class="val">90021km²</div><div class="lbl">总面积</div></div>
+                <div class="ov-item"><div class="val">3区7旗2县</div><div class="lbl">行政区划</div></div>
+                <div class="ov-item"><div class="val">2407.1亿</div><div class="lbl">地区生产总值（2025）</div></div>
+            </div>
+            <p>赤峰市，简称"赤"，原称"昭乌达盟"，是中华人民共和国内蒙古自治区下辖地级市、II型大城市。位于内蒙古东南部，蒙冀辽三省区交汇处，地处东北、华北地区结合部，总面积<strong>90021平方千米</strong>。截至2024年末，赤峰市常住人口<strong>393.1万</strong>。</p>
+            <p>赤峰名为红山之意，因城区东北部赭红色山峰而得名，蒙古语称"乌兰哈达"。因红山文化"国宝"碧玉龙的发现，赤峰又被称为<strong>"玉龙之乡"</strong>。赤峰地区曾是辽代政治、经济文化的中心，辽上京和辽中京分别坐落在巴林左旗和宁城县境内。赤峰是国家卫生城市、全国民族团结进步示范市、国家园林城市、<strong>中国优秀旅游城市</strong>，被誉为"中国有色金属之乡"。</p>
+            <div class="img-row">
+                <img src="./image/红山文化遗址.jpg" alt="红山文化">
+                <img src="./image/乌兰布统景区.png" alt="乌兰布统草原">
+            </div>
+        </div>
+
+        <!-- 历史沿革 -->
+        <div class="info-card" id="history">
+            <h2>历史沿革</h2>
+            <div class="timeline">
+                <div class="tl-item"><div class="era">约1万年前</div><p>赤峰先民率先进行新石器革命，迎来人类文明曙光。兴隆洼文化时代开始农耕渔猎定居生活，留下"华夏第一村"聚落遗址。</p></div>
+                <div class="tl-item"><div class="era">约5000-6000年前</div><p>红山文化时代，赤峰成为中华古代文明诞生地。翁牛特旗三星他拉出土的大型碧玉雕龙，是中华大地最早的龙形器物，被誉为"天下第一龙"。</p></div>
+                <div class="tl-item"><div class="era">辽代</div><p>赤峰全境属上京临潢府和中京大定府。上京是辽王朝首都，中京是最大陪都，赤峰成为辽代政治、经济、文化中心。</p></div>
+                <div class="tl-item"><div class="era">清代</div><p>今赤峰市大部属昭乌达盟，部分属卓索图盟。"昭乌达"为蒙语，意为"百柳"，因草原上百柳丛生而得名。</p></div>
+                <div class="tl-item"><div class="era">1983年</div><p>经国务院批准，撤销昭乌达盟行政公署建制，建立赤峰市，实行市管县体制，辖3区7旗2县至今。</p></div>
+            </div>
+        </div>
+
+        <!-- 地理气候 -->
+        <div class="info-card" id="geo">
+            <h2>地理环境与气候</h2>
+            <p>赤峰地处内蒙古高原、冀北丘陵和辽宁平原的截接复合部位，呈<strong>三面环山、西高东低、多山多丘陵</strong>的地貌特征。结构为"七山一水二分田"，海拔300—2000米。北部为大兴安岭南段山地，西部为七老图山，东南部为努鲁儿虎山。最高峰为大光顶子山（2067米），最低处为东部大兴三角地区（不足300米）。</p>
+            <p>赤峰属<strong>温带半干旱大陆性季风气候</strong>，四季分明：冬季漫长寒冷雪少风多，春季升温快干旱多风，夏季短促雨量集中，秋季气温下降快霜冻来临早。年平均气温0—7℃，年降水量381毫米，日照时数2800—3100小时。境内四大流域、八大水系，大小湖泊128个，最大湖泊为达里诺尔湖。</p>
+            <div class="img-row">
+                <img src="./image/黄岗梁国家森林公园.png" alt="赤峰地貌">
+                <img src="./image/达里诺尔湖.png" alt="达里诺尔湖">
+            </div>
+        </div>
+
+        <!-- 行政区划 -->
+        <div class="info-card" id="dist">
+            <h2>行政区划</h2>
+            <p>赤峰市辖<strong>3个区、7个旗、2个县</strong>，市人民政府驻松山区玉龙大街1号。</p>
+            <div class="dist-grid">
+                <div class="dist-item"><strong>红山区</strong>506km² · 区政府驻地</div>
+                <div class="dist-item"><strong>松山区</strong>5618km² · 市府驻地</div>
+                <div class="dist-item"><strong>元宝山区</strong>952km²</div>
+                <div class="dist-item"><strong>宁城县</strong>4305km²</div>
+                <div class="dist-item"><strong>林西县</strong>3933km²</div>
+                <div class="dist-item"><strong>阿鲁科尔沁旗</strong>14277km²</div>
+                <div class="dist-item"><strong>巴林左旗</strong>6644km² · 辽上京遗址</div>
+                <div class="dist-item"><strong>巴林右旗</strong>10256km²</div>
+                <div class="dist-item"><strong>克什克腾旗</strong>20673km² · 旅游重镇</div>
+                <div class="dist-item"><strong>翁牛特旗</strong>12000km²</div>
+                <div class="dist-item"><strong>喀喇沁旗</strong>3050km²</div>
+                <div class="dist-item"><strong>敖汉旗</strong>8300km²</div>
+            </div>
+        </div>
+
+        <!-- 经济发展 -->
+        <div class="info-card" id="econ">
+            <h2>经济发展</h2>
+            <p>2025年，赤峰市地区生产总值<strong>2407.1亿元</strong>，增长4.9%。已形成以能源、冶金、食品、医药、纺织、建材化工、机械等行业为支柱的门类齐全的工业体系。赤峰高新区工业总产值超1180亿元，是蒙东地区首个突破千亿的园区。2010年被命名为<strong>"中国有色金属之乡"</strong>，是全国唯一获此殊荣的地级城市。已发现矿产资源83种、矿产地1600多处，金、银、铜、铅、锌等储量丰富。</p>
+            <p>赤峰是首都经济圈和环渤海经济圈重要节点城市，商贸服务型国家物流枢纽承载城市，国家重要能源和战略资源供给保障基地。2019年获批国家级跨境电子商务综合试验区，中欧班列"赤峰号"已实现常态化运行，2024年正式开通至天津港铁海联运进出口新通道。</p>
+        </div>
+
+        <!-- 历史文化 -->
+        <div class="info-card" id="culture">
+            <h2>历史文化</h2>
+            <div class="culture-grid">
+                <div class="cul-item"><div class="ic">🐉</div><div><h4>红山文化 · 中华第一龙</h4><p>距今五六千年的红山文化是中华文明重要源头。出土的C形碧玉龙被誉为"中华第一龙"，将华夏龙崇拜追溯至新石器时代。</p></div></div>
+                <div class="cul-item"><div class="ic">🏛️</div><div><h4>契丹辽文化</h4><p>赤峰是辽代政治经济文化中心，辽上京（巴林左旗）为辽代首都，辽中京（宁城县）为最大陪都，留下大量珍贵历史遗迹。</p></div></div>
+                <div class="cul-item"><div class="ic">🗣️</div><div><h4>蒙古族文化</h4><p>赤峰是蒙古族重要聚居地，那达慕大会、马头琴、蒙古包、祭敖包、蒙古族服饰等多项非遗项目在此传承发扬。</p></div></div>
+                <div class="cul-item"><div class="ic">🏺</div><div><h4>巴林石 · 四大国石</h4><p>巴林石产于巴林右旗，与寿山石、青田石、昌化石并称中国四大国石，是赤峰最具代表性的矿产资源与文化符号。</p></div></div>
+            </div>
+        </div>
+
+        <!-- 风景名胜 -->
+        <div class="info-card" id="tourism">
+            <h2>风景名胜</h2>
+            <p>赤峰是中国优秀旅游城市，自然与人文景观交相辉映。有世界地质公园<strong>阿斯哈图石林</strong>、距北京最近的大草原<strong>乌兰布统</strong>、候鸟天堂<strong>达里诺尔湖</strong>、沙水相连的<strong>玉龙沙湖</strong>，还有红山文化遗址、辽上京遗址等国家级重点文保单位。全市各级各类自然保护区28个，其中国家级8个。</p>
+            <div class="img-row">
+                <img src="./image/赤峰市阿斯哈图石林景区.png" alt="阿斯哈图石林">
+                <img src="./image/玉龙沙湖.jpg" alt="玉龙沙湖">
+            </div>
+        </div>
+
+        <!-- 交通运输 -->
+        <div class="info-card" id="transport">
+            <h2>交通运输</h2>
+            <p>赤峰区位优越、交通便捷，是内蒙古距离出海口最近的城市。距北京、沈阳约400公里，距锦州、秦皇岛不足300公里。<strong>赤峰玉龙机场</strong>已开通至北京、上海、呼和浩特等主要城市航线，另有阿鲁科尔沁机场、巴林右旗大板机场等多个通用机场。<strong>铁路方面</strong>，赤峰站是京通铁路重要枢纽，高铁至北京约2.5小时。<strong>公路方面</strong>，大广高速（G45）、丹锡高速（G16）贯穿全境。中欧班列"赤峰号"和铁海联运通道为赤峰打开了连接世界的大门。</p>
+        </div>
+
+        <a href="index.html" class="back-home">← 返回首页</a>
+    </div>
+</body>
+</html>

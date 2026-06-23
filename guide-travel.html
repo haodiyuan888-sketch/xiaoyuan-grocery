@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赤峰全域旅游指南 - 赤峰文旅</title>
+    <link rel="stylesheet" href="./css/demoForHomework.css">
+    <style>
+        .page-wrap { max-width: 1040px; margin: 62px auto 0; padding: 40px 20px 60px; }
+        .page-wrap * { box-sizing: border-box; }
+
+        .hero { position: relative; border-radius: 18px; overflow: hidden; margin-bottom: 30px; }
+        .hero img { width: 100%; height: 420px; object-fit: cover; display: block; }
+        .hero .overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(26,58,42,0.4) 0%, transparent 40%, rgba(0,0,0,0.5) 100%); }
+        .hero .title { position: absolute; bottom: 0; left: 0; right: 0; padding: 70px 40px 30px; color: #fff; }
+        .hero .title h1 { font-size: 2.6rem; letter-spacing: 3px; margin-bottom: 6px; text-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+        .hero .title span { font-size: 1rem; opacity: 0.9; }
+
+        .quick-nav { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 28px; background: #fff; border-radius: 14px; padding: 16px 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
+        .quick-nav a { text-decoration: none; color: #5c4d3c; padding: 6px 14px; border-radius: 8px; font-size: 0.92rem; border: 1px solid #e8d5b0; transition: all 0.2s ease; }
+        .quick-nav a:hover { background: #daa520; color: #fff; border-color: #daa520; }
+
+        .img-strip { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; margin-bottom: 28px; }
+        .img-strip img { width: 100%; height: 160px; object-fit: cover; border-radius: 10px; transition: transform 0.3s ease; }
+        .img-strip img:hover { transform: scale(1.06); }
+
+        .g-card { background: #fff; border-radius: 16px; padding: 36px; margin-bottom: 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+        .g-card h2 { color: #1a3a2a; font-size: 1.5rem; margin-bottom: 24px; padding-left: 14px; border-left: 4px solid #daa520; }
+
+        .route-list { display: flex; flex-direction: column; gap: 20px; }
+        .route-item { display: flex; gap: 20px; background: #faf6ef; border-radius: 14px; padding: 24px; border: 1px solid #e8d5b0; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .route-item:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(139,105,20,0.12); }
+        .route-day { flex-shrink: 0; width: 80px; height: 80px; border-radius: 12px; background: linear-gradient(135deg, #daa520, #b8860b); color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; font-weight: 700; }
+        .route-day .num { font-size: 1.8rem; line-height: 1; }
+        .route-day .txt { font-size: 0.8rem; opacity: 0.9; }
+        .route-body { flex: 1; min-width: 0; }
+        .route-body h4 { color: #1a3a2a; font-size: 1.15rem; margin-bottom: 6px; }
+        .route-body p { color: #6b5e4a; font-size: 0.93rem; line-height: 1.7; }
+
+        .season-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+        .season-item { text-align: center; border-radius: 14px; padding: 24px 14px; border: 1px solid #e8d5b0; background: #faf6ef; transition: transform 0.3s ease; }
+        .season-item:hover { transform: translateY(-4px); box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+        .season-item .icon { font-size: 2.5rem; margin-bottom: 8px; }
+        .season-item h4 { color: #1a3a2a; margin-bottom: 4px; font-size: 1rem; }
+        .season-item .time { color: #b8860b; font-size: 0.82rem; font-weight: 600; margin-bottom: 6px; }
+        .season-item p { color: #6b5e4a; font-size: 0.85rem; line-height: 1.5; }
+
+        .tip-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+        .tip-item { display: flex; gap: 14px; background: #faf6ef; border-radius: 12px; padding: 18px 20px; border: 1px solid #e8d5b0; align-items: flex-start; }
+        .tip-item .icon { font-size: 2rem; flex-shrink: 0; }
+        .tip-item .txt { flex: 1; min-width: 0; }
+        .tip-item h4 { color: #1a3a2a; margin-bottom: 4px; font-size: 1rem; }
+        .tip-item p { color: #6b5e4a; font-size: 0.88rem; line-height: 1.6; }
+
+        @media (max-width: 768px) {
+            .page-wrap { padding: 20px 12px 40px; }
+            .hero img { height: 240px; }
+            .hero .title { padding: 40px 20px 20px; }
+            .hero .title h1 { font-size: 1.6rem; }
+            .g-card { padding: 20px 16px; }
+            .img-strip { grid-template-columns: repeat(3, 1fr); }
+            .img-strip img { height: 110px; }
+            .season-grid { grid-template-columns: 1fr 1fr; }
+            .tip-grid { grid-template-columns: 1fr; }
+            .route-item { flex-direction: column; align-items: center; text-align: center; }
+            .route-day { width: 64px; height: 64px; }
+            .route-day .num { font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="side-panel side-left"><div class="side-section"><h4>📍 快速导航</h4><a href="index.html" class="side-nav-item">🏠 回到首页</a><a href="index.html#section1" class="side-nav-item">🌿 草原风情</a><a href="index.html#section2" class="side-nav-item">🎯 文旅锦囊</a><a href="index.html#section3" class="side-nav-item">⭐ 更多推荐</a><a href="guide-travel.html" class="side-nav-item">🗺️ 旅游指南</a></div><div class="side-section"><h4>🏷️ 热门标签</h4><div class="side-tags"><a href="wulanbutong.html">乌兰布统</a><a href="ashatu.html">阿斯哈图</a><a href="dalinuoer.html">达里诺尔</a><a href="food.html#kaoyang">烤全羊</a><a href="nadamu.html">那达慕</a><a href="hongshan-wenhua.html">红山文化</a><a href="horse-riding.html">骑马</a><a href="keshiketeng-wenquan.html">温泉</a><a href="culture.html#menggubao">蒙古包</a></div></div></div><div class="side-panel side-right"><div class="side-section"><h4>💡 旅游贴士</h4><div class="tip-mini"><p>🕐 最佳季节：6-10月</p><p>🌡️ 夏季均温：20°C</p><p>🧥 早晚温差大备外套</p><p>📸 日出日落最出片</p></div></div><button class="back-to-top" onclick="window.scrollTo({top:0,behavior:<body>#39;smooth<body>#39;})">⬆ 回到顶部</button></div>
+    <div class="navi">
+        <div class="logoInfo"><div><a href="index.html"><img class="logo" src="./image/辽阔内蒙.png" alt="logo"></a></div><div><span class="logotext">赤峰文旅</span></div></div>
+        <ul class="nav-links">
+            <li><a href="index.html">首页</a></li><li><a href="index.html#section1">草原风情</a></li><li><a href="index.html#section2">文旅锦囊</a></li><li><a href="index.html#section3">更多推荐</a></li>
+            <li><a href="gallery.html">影像赤峰</a></li><li><a href="food.html">特色美食</a></li><li><a href="guide-travel.html">旅游指南</a></li><li><a href="services.html">旅游服务</a></li>
+        </ul>
+    </div>
+
+    <div class="page-wrap">
+
+        <div class="hero">
+            <img src="./image/玉龙沙湖.jpg" alt="赤峰旅游指南">
+            <div class="overlay"></div>
+            <div class="title">
+                <h1>赤峰全域旅游指南</h1>
+                <span>草原 · 石林 · 大漠 · 湖泊 · 牧场 —— 一站解锁赤峰全景玩法</span>
+            </div>
+        </div>
+
+        <div class="quick-nav">
+            <a href="#routes">精品路线</a><a href="#seasons">四季风光</a><a href="#spots">必游景点</a><a href="#food">美食推荐</a><a href="#tips">出行贴士</a><a href="#gallery">风光图集</a>
+        </div>
+
+        <div class="img-strip" id="gallery">
+            <img src="./image/1.jpg" alt="1"><img src="./image/3.jpg" alt="2">
+            <img src="./image/5.jpg" alt="3"><img src="./image/7.jpg" alt="4">
+            <img src="./image/9.jpg" alt="5"><img src="./image/11.jpg" alt="6">
+        </div>
+
+        <div class="g-card" id="routes">
+            <h2>精品旅游路线</h2>
+            <div class="route-list">
+                <div class="route-item">
+                    <div class="route-day"><span class="num">3</span><span class="txt">日游</span></div>
+                    <div class="route-body">
+                        <h4>草原经典三日游</h4>
+                        <p><strong>Day1：</strong>抵达赤峰 → 赤峰博物馆（了解红山文化）→ 红山国家森林公园<br>
+                        <strong>Day2：</strong>乌兰布统草原全天深度游（骑马、越野、篝火晚会、住蒙古包）<br>
+                        <strong>Day3：</strong>清晨草原日出 → 公主湖 → 影视外景基地 → 返程</p>
+                    </div>
+                </div>
+                <div class="route-item">
+                    <div class="route-day"><span class="num">5</span><span class="txt">日游</span></div>
+                    <div class="route-body">
+                        <h4>草原石林全景五日游</h4>
+                        <p><strong>Day1：</strong>抵达赤峰 → 红山文化博物馆 → 市区美食<br>
+                        <strong>Day2：</strong>乌兰布统草原（将军泡子、五彩山、公主湖）→ 草原晚宴<br>
+                        <strong>Day3：</strong>达里诺尔湖观鸟 → 贡格尔草原 → 热水塘温泉<br>
+                        <strong>Day4：</strong>阿斯哈图石林全天游览 → 黄岗梁国家森林公园<br>
+                        <strong>Day5：</strong>玉龙沙湖（滑沙骑骆驼）→ 返程</p>
+                    </div>
+                </div>
+                <div class="route-item">
+                    <div class="route-day"><span class="num">7</span><span class="txt">深度游</span></div>
+                    <div class="route-body">
+                        <h4>赤峰全境深度七日游</h4>
+                        <p><strong>Day1-2：</strong>赤峰市区（博物馆、红山公园）→ 乌兰布统草原两日深度体验<br>
+                        <strong>Day3：</strong>达里诺尔湖 → 贡格尔草原 → 夜宿蒙古包<br>
+                        <strong>Day4：</strong>阿斯哈图石林 → 黄岗梁 → 热水塘温泉泡汤<br>
+                        <strong>Day5：</strong>玉龙沙湖 → 沙漠越野 → 沙湖日落<br>
+                        <strong>Day6-7：</strong>克什克腾旗深度探索 → 草原骑马 → 那达慕体验 → 满载返程</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="g-card" id="seasons">
+            <h2>四季赤峰 · 各有其美</h2>
+            <div class="season-grid">
+                <div class="season-item">
+                    <div class="icon">🌸</div><h4>春 · 生机勃发</h4>
+                    <div class="time">4月 — 5月</div>
+                    <p>草原返青、杜鹃花漫山遍野，达里诺尔湖候鸟北归，观鸟最佳季节。</p>
+                </div>
+                <div class="season-item">
+                    <div class="icon">🌿</div><h4>夏 · 绿野仙踪</h4>
+                    <div class="time">6月 — 8月</div>
+                    <p>草原最美的季节，那达慕大会盛大举行，均温20℃，避暑胜地。</p>
+                </div>
+                <div class="season-item">
+                    <div class="icon">🍂</div><h4>秋 · 层林尽染</h4>
+                    <div class="time">9月 — 10月</div>
+                    <p>白桦金黄枫叶火红，五彩山斑斓如画，摄影爱好者的黄金季节。</p>
+                </div>
+                <div class="season-item">
+                    <div class="icon">❄️</div><h4>冬 · 银装素裹</h4>
+                    <div class="time">11月 — 次年3月</div>
+                    <p>雪原茫茫雾凇晶莹，达里诺尔湖冬捕壮观，体验纯粹北国冬日。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="g-card" id="spots">
+            <h2>必游景点 Top 6</h2>
+            <div class="tip-grid">
+                <div class="tip-item"><div class="icon">🏇</div><div class="txt"><h4>乌兰布统草原（5A）</h4><p>欧式草原风光，影视取景圣地，距北京最近的大草原，骑马驰骋不容错过。</p></div></div>
+                <div class="tip-item"><div class="icon">🗿</div><div class="txt"><h4>阿斯哈图石林（5A）</h4><p>世界地质公园，独一无二的花岗岩石林地貌，亿万年冰川雕琢的自然奇迹。</p></div></div>
+                <div class="tip-item"><div class="icon">🌊</div><div class="txt"><h4>达里诺尔湖（4A）</h4><p>内蒙古四大内陆湖之一，春秋候鸟天堂，华子鱼洄游与湖上日落令人难忘。</p></div></div>
+                <div class="tip-item"><div class="icon">🏜️</div><div class="txt"><h4>玉龙沙湖（4A）</h4><p>沙湖相连的塞外奇观，沙漠越野、滑沙骑骆驼，中华第一龙出土地。</p></div></div>
+                <div class="tip-item"><div class="icon">🌲</div><div class="txt"><h4>黄岗梁国家森林公园</h4><p>大兴安岭最高峰，四季风光如画，秋季层林尽染，冬季雾凇奇观。</p></div></div>
+                <div class="tip-item"><div class="icon">🏛️</div><div class="txt"><h4>赤峰博物馆</h4><p>了解红山文化与契丹辽文化的绝佳起点，馆藏珍贵文物，免费参观。</p></div></div>
+            </div>
+        </div>
+
+        <div class="g-card" id="food">
+            <h2>不可错过的草原味道</h2>
+            <div class="tip-grid">
+                <div class="tip-item"><div class="icon">🍖</div><div class="txt"><h4>烤全羊</h4><p>蒙古族最高待客礼仪，外酥里嫩，是草原盛宴的压轴大菜。</p></div></div>
+                <div class="tip-item"><div class="icon">🥩</div><div class="txt"><h4>手把肉</h4><p>清水煮羊肉保留最本真鲜美，一手把肉一刀持刀，豪迈草原吃法。</p></div></div>
+                <div class="tip-item"><div class="icon">🍵</div><div class="txt"><h4>蒙古奶茶</h4><p>砖茶加鲜奶熬制咸香浓郁，牧民一日不可无茶，待客的第一道礼。</p></div></div>
+                <div class="tip-item"><div class="icon">🧀</div><div class="txt"><h4>奶豆腐</h4><p>纯鲜牛奶发酵制成奶香浓郁，可生食可油炸，草原特色伴手礼。</p></div></div>
+                <div class="tip-item"><div class="icon">🥓</div><div class="txt"><h4>风干牛肉</h4><p>草原黄牛后腿肉自然风干，嚼劲十足越嚼越香，驰名中外草原名产。</p></div></div>
+                <div class="tip-item"><div class="icon">🐟</div><div class="txt"><h4>达里诺尔华子鱼</h4><p>达里诺尔湖特产，肉质细嫩鲜美，每年洄游季节最为肥美好吃。</p></div></div>
+            </div>
+        </div>
+
+        <div class="g-card" id="tips">
+            <h2>出行贴士</h2>
+            <div class="tip-grid">
+                <div class="tip-item"><div class="icon">🚗</div><div class="txt"><h4>交通方式</h4><p>北京自驾约5h走大广高速；高铁赤峰站约2.5h；玉龙机场直飞京沪等地。</p></div></div>
+                <div class="tip-item"><div class="icon">🏨</div><div class="txt"><h4>住宿建议</h4><p>草原蒙古包必体验；市区推荐新城区星级酒店；景区周边特色民宿性价比高。</p></div></div>
+                <div class="tip-item"><div class="icon">🧥</div><div class="txt"><h4>穿衣指南</h4><p>草原昼夜温差大（可达15℃），夏季也需长袖外套，防晒霜墨镜遮阳帽必备。</p></div></div>
+                <div class="tip-item"><div class="icon">📱</div><div class="txt"><h4>实用信息</h4><p>旺季提前订住宿；草原信号弱提前下离线地图；尊重蒙古族风俗，进包不踩门槛。</p></div></div>
+            </div>
+        </div>
+
+        
+<a href="index.html" class="back-home">← 返回首页</a>
+    </div>
+</body>
+</html>

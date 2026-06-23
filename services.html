@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅游服务 - 赤峰文旅</title>
+    <link rel="stylesheet" href="./css/demoForHomework.css">
+    <style>
+        .page-wrap { max-width: 1040px; margin: 62px auto 0; padding: 40px 20px; }
+        .hero { position: relative; border-radius: 18px; overflow: hidden; margin-bottom: 28px; }
+        .hero img { width: 100%; height: 360px; object-fit: cover; display: block; }
+        .hero .title { position: absolute; bottom: 0; left: 0; right: 0; padding: 60px 40px 30px; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: #fff; }
+        .hero .title h1 { font-size: 2.4rem; letter-spacing: 2px; margin-bottom: 4px; }
+        .hero .title span { font-size: 1rem; opacity: 0.9; }
+        .svc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        .svc-card { background: #fff; border-radius: 14px; padding: 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); border: 1px solid #f0ebe0; }
+        .svc-card h3 { color: #1a3a2a; font-size: 1.2rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+        .svc-card h3 .ic { font-size: 1.5rem; }
+        .svc-card p, .svc-card li { color: #555; line-height: 1.8; font-size: 0.95rem; }
+        .svc-card ul { list-style: none; padding: 0; }
+        .svc-card li { padding: 4px 0 4px 16px; position: relative; }
+        .svc-card li::before { content: '•'; position: absolute; left: 0; color: #daa520; }
+        .highlight-box { background: linear-gradient(135deg, #1a3a2a, #2d6a4f); color: #fff; border-radius: 14px; padding: 28px 32px; margin-bottom: 24px; text-align: center; }
+        .highlight-box h3 { font-size: 1.3rem; margin-bottom: 8px; }
+        .highlight-box p { opacity: 0.9; line-height: 1.7; }
+        .highlight-box .tel { font-size: 2rem; font-weight: 700; color: #daa520; margin: 8px 0; letter-spacing: 2px; }
+        @media (max-width: 768px) { .page-wrap { padding: 20px 12px; } .hero img { height: 240px; } .svc-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="navi">
+        <div class="logoInfo"><div><a href="index.html"><img class="logo" src="./image/辽阔内蒙.png" alt="logo"></a></div><div><span class="logotext">赤峰文旅</span></div></div>
+        <ul class="nav-links">
+            <li><a href="index.html">首页</a></li><li><a href="index.html#section1">草原风情</a></li><li><a href="index.html#section2">文旅锦囊</a></li><li><a href="index.html#section3">更多推荐</a></li>
+            <li><a href="gallery.html">影像赤峰</a></li>
+            <li><a href="food.html">特色美食</a></li>
+            <li><a href="guide-travel.html">旅游指南</a></li>
+            <li><a href="services.html" style="color:#daa520; border:1px solid #daa520; border-radius:8px;">旅游服务</a></li>
+        </ul>
+    </div>
+
+    <div class="page-wrap">
+        <div class="hero">
+            <img src="./image/8.jpg" alt="旅游服务">
+            <div class="title"><h1>旅游服务</h1><span>一站式旅行保障，让您的赤峰之旅安心无忧</span></div>
+        </div>
+
+        <div class="highlight-box">
+            <h3>赤峰文旅服务热线</h3>
+            <div class="tel">0476-8333058</div>
+            <p>服务时间：每日 8:00 - 20:00 · 提供旅游咨询、投诉受理、紧急救援协调服务</p>
+        </div>
+
+        <div class="svc-grid">
+            <div class="svc-card">
+                <h3><span class="ic">🎫</span> 票务预订</h3>
+                <ul>
+                    <li>乌兰布统、阿斯哈图等主要景区支持线上预约购票</li>
+                    <li>旺季（6-9月）建议提前3-7天预订门票</li>
+                    <li>学生、老人等特殊群体凭证件享半价优惠</li>
+                    <li>团队票（10人以上）可联系景区获取折扣</li>
+                </ul>
+            </div>
+            <div class="svc-card">
+                <h3><span class="ic">🏨</span> 住宿服务</h3>
+                <ul>
+                    <li>市区星级酒店：赤峰万达嘉华、赤峰宾馆等</li>
+                    <li>草原蒙古包：乌兰布统、贡格尔均有特色住宿</li>
+                    <li>温泉度假村：热水塘镇多家温泉酒店可选</li>
+                    <li>建议旺季提前2周以上预订住宿</li>
+                </ul>
+            </div>
+            <div class="svc-card">
+                <h3><span class="ic">🗣️</span> 导游服务</h3>
+                <ul>
+                    <li>赤峰各大旅行社提供持证专业导游</li>
+                    <li>提供中、英、蒙多语言导游服务</li>
+                    <li>深度文化讲解：红山文化、契丹辽文化</li>
+                    <li>户外领队：草原徒步、沙漠越野专业向导</li>
+                </ul>
+            </div>
+            <div class="svc-card">
+                <h3><span class="ic">🛡️</span> 旅行保障</h3>
+                <ul>
+                    <li>建议购买旅游意外保险，覆盖户外项目</li>
+                    <li>草原地区手机信号较弱，建议下载离线地图</li>
+                    <li>景区设有医疗急救站，提供基本医疗服务</li>
+                    <li>赤峰市人民医院（三甲）24小时急诊</li>
+                </ul>
+            </div>
+            <div class="svc-card">
+                <h3><span class="ic">🛍️</span> 特色购物</h3>
+                <ul>
+                    <li>风干牛肉、奶豆腐、蒙古奶茶等草原特产</li>
+                    <li>蒙古族手工艺品：马头琴模型、皮画、银饰</li>
+                    <li>推荐购物点：赤峰王府井、红山特产市场</li>
+                    <li>景区周边商店价格偏高，市区购买更实惠</li>
+                </ul>
+            </div>
+            <div class="svc-card">
+                <h3><span class="ic">📋</span> 实用信息</h3>
+                <ul>
+                    <li>赤峰旅游官网及公众号可获取最新资讯</li>
+                    <li>草原早晚温差大（可达15°C），备好保暖衣物</li>
+                    <li>尊重蒙古族风俗：不进包不踩门槛、不指敖包</li>
+                    <li>赤峰市区到各景区均有班车，也可包车前往</li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-home">← 返回首页</a>
+    </div>
+</body>
+</html>

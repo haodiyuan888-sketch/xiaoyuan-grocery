@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>热门游记 - 赤峰文旅</title>
+    <link rel="stylesheet" href="./css/demoForHomework.css">
+    <style>
+        .page-banner {
+            height: 320px;
+            background: url('./image/贡格尔草原.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 62px;
+            position: relative;
+        }
+        .page-banner::before {
+            content: ''; position: absolute; inset: 0;
+            background: rgba(0,0,0,0.35);
+        }
+        .page-banner h1 {
+            color: #fff;
+            font-size: 2.8rem;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            position: relative; z-index: 1;
+        }
+        .travel-list {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .travel-card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+            padding: 30px;
+            display: flex;
+            gap: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .travel-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+        .travel-card-img {
+            width: 200px;
+            height: 150px;
+            border-radius: 12px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .travel-card-body h3 {
+            font-size: 1.4rem;
+            color: #1a3a2a;
+            margin-bottom: 8px;
+        }
+        .travel-card-body .meta {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 12px;
+        }
+        .travel-card-body p {
+            color: #555;
+            line-height: 1.7;
+        }
+        .back-home {
+            display: block;
+            text-align: center;
+            margin: 30px auto 60px;
+            color: #40916c;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        .back-home:hover {
+            color: #1a3a2a;
+        }
+        @media (max-width: 768px) {
+            .travel-card {
+                flex-direction: column;
+            }
+            .travel-card-img {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navi">
+            <div class="logoInfo">
+                <div>
+                    <a href="index.html"><img class="logo" src="./image/辽阔内蒙.png" alt="logo"></a>
+                </div>
+                <div>
+                    <span class="logotext">赤峰文旅</span>
+                </div>
+            </div>
+            <ul class="nav-links">
+<li><a href="index.html">首页</a></li><li><a href="index.html#section1">草原风情</a></li><li><a href="index.html#section2">文旅锦囊</a></li><li><a href="index.html#section3">更多推荐</a></li><li><a href="gallery.html">影像赤峰</a></li><li><a href="food.html">特色美食</a></li><li><a href="guide-travel.html">旅游指南</a></li><li><a href="services.html">旅游服务</a></li>
+            </ul>
+        </div>
+
+        <div class="page-banner">
+            <h1>热门游记</h1>
+        </div>
+
+        <div class="travel-list">
+            <div class="travel-card">
+                <img class="travel-card-img" src="./image/乌兰布统景区.png" alt="草原之旅">
+                <div class="travel-card-body">
+                    <h3>乌兰布统草原——夏日的绿色海洋</h3>
+                    <div class="meta">2024年7月 · 作者：旅行者小张 · 阅读 2.3万</div>
+                    <p>七月的乌兰布统，草长莺飞，一望无际的绿色草原让人心旷神怡。骑马驰骋在草原上，感受风从耳边呼啸而过，傍晚的篝火晚会更是让人流连忘返……</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <img class="travel-card-img" src="./image/赤峰市阿斯哈图石林景区.png" alt="石林探秘">
+                <div class="travel-card-body">
+                    <h3>探秘阿斯哈图石林——亿年地质奇观</h3>
+                    <div class="meta">2024年9月 · 作者：地质爱好者老王 · 阅读 1.8万</div>
+                    <p>阿斯哈图石林是世界地质公园，形态各异的花岗岩石林矗立在山脊之上，宛如一座天然的雕塑博物馆。清晨的石林在薄雾中更显神秘……</p>
+                </div>
+            </div>
+            <div class="travel-card">
+                <img class="travel-card-img" src="./image/达里诺尔湖.png" alt="达里诺尔">
+                <div class="travel-card-body">
+                    <h3>达里诺尔湖——草原上的明珠</h3>
+                    <div class="meta">2024年8月 · 作者：摄影师大刘 · 阅读 1.5万</div>
+                    <p>达里诺尔湖是内蒙古四大内陆湖之一，湖水湛蓝如海。每年春秋两季，成千上万的天鹅在此栖息，构成一幅绝美的生态画卷……</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-home">← 返回首页</a>
+    </div>
+</body>
+</html>

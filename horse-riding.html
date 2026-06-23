@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>草原骑马体验 - 赤峰文旅</title>
+    <link rel="stylesheet" href="./css/demoForHomework.css">
+    <style>
+        .page-wrap { max-width: 1040px; margin: 62px auto 0; padding: 40px 20px; }
+        .hero { position: relative; border-radius: 18px; overflow: hidden; margin-bottom: 30px; }
+        .hero img { width: 100%; height: 400px; object-fit: cover; display: block; }
+        .hero .title { position: absolute; bottom: 0; left: 0; right: 0; padding: 70px 40px 30px; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: #fff; }
+        .hero .title h1 { font-size: 2.4rem; margin-bottom: 6px; letter-spacing: 2px; }
+        .hero .title span { font-size: 1rem; opacity: 0.9; }
+        .info-row { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 28px; background: #fff; border-radius: 14px; padding: 16px 22px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
+        .info-tag { background: #faf6ef; border: 1px solid #e8d5b0; border-radius: 8px; padding: 7px 14px; font-size: 0.88rem; color: #5c4d3c; white-space: nowrap; }
+        .h-card { background: #fff; border-radius: 16px; padding: 34px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+        .h-card h2 { color: #1a3a2a; font-size: 1.5rem; margin-bottom: 20px; padding-left: 14px; border-left: 4px solid #daa520; }
+        .h-card p { color: #555; line-height: 2; font-size: 1.05rem; text-indent: 2em; margin-bottom: 12px; }
+        .h-card ul { list-style: none; padding: 0; }
+        .h-card li { padding: 8px 0 8px 20px; color: #5c4d3c; line-height: 1.7; position: relative; }
+        .h-card li::before { content: '🐴'; position: absolute; left: 0; font-size: 0.8rem; }
+        .location-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 16px; }
+        .loc-card { background: #faf6ef; border-radius: 12px; padding: 18px; border: 1px solid #e8d5b0; }
+        .loc-card h4 { color: #1a3a2a; margin-bottom: 6px; }
+        .loc-card p { color: #6b5e4a; font-size: 0.9rem; line-height: 1.6; text-indent: 0; }
+        .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 20px; }
+        .gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; transition: transform 0.3s ease; }
+        .gallery img:hover { transform: scale(1.05); }
+        @media (max-width: 768px) {
+            .page-wrap { padding: 20px 12px; }
+            .hero img { height: 240px; }
+            .h-card { padding: 20px 16px; }
+            .location-grid { grid-template-columns: 1fr; }
+            .gallery { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+<div class="side-panel side-left"><div class="side-section"><h4>📍 快速导航</h4><a href="index.html" class="side-nav-item">🏠 回到首页</a><a href="index.html#section1" class="side-nav-item">🌿 草原风情</a><a href="index.html#section2" class="side-nav-item">🎯 文旅锦囊</a><a href="index.html#section3" class="side-nav-item">⭐ 更多推荐</a><a href="guide-travel.html" class="side-nav-item">🗺️ 旅游指南</a></div><div class="side-section"><h4>🏷️ 热门标签</h4><div class="side-tags"><a href="wulanbutong.html">乌兰布统</a><a href="ashatu.html">阿斯哈图</a><a href="dalinuoer.html">达里诺尔</a><a href="food.html#kaoyang">烤全羊</a><a href="nadamu.html">那达慕</a><a href="hongshan-wenhua.html">红山文化</a><a href="horse-riding.html">骑马</a><a href="keshiketeng-wenquan.html">温泉</a><a href="culture.html#menggubao">蒙古包</a></div></div></div><div class="side-panel side-right"><div class="side-section"><h4>💡 旅游贴士</h4><div class="tip-mini"><p>🕐 最佳季节：6-10月</p><p>🌡️ 夏季均温：20°C</p><p>🧥 早晚温差大备外套</p><p>📸 日出日落最出片</p></div></div><button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">⬆ 回到顶部</button></div>
+    <div class="navi">
+        <div class="logoInfo"><div><a href="index.html"><img class="logo" src="./image/辽阔内蒙.png" alt="logo"></a></div><div><span class="logotext">赤峰文旅</span></div></div>
+        <ul class="nav-links">
+<li><a href="index.html">首页</a></li><li><a href="index.html#section1">草原风情</a></li><li><a href="index.html#section2">文旅锦囊</a></li><li><a href="index.html#section3">更多推荐</a></li><li><a href="gallery.html">影像赤峰</a></li><li><a href="food.html">特色美食</a></li><li><a href="guide-travel.html">旅游指南</a></li><li><a href="services.html">旅游服务</a></li>
+        </ul>
+    </div>
+
+    <div class="page-wrap">
+
+        <div class="hero">
+            <img src="./image/3.jpg" alt="草原骑马">
+            <div class="title"><h1>草原骑马体验</h1><span>策马奔腾，感受草原儿女的自由豪情</span></div>
+        </div>
+
+        <div class="info-row">
+            <span class="info-tag">推荐地点：乌兰布统、贡格尔草原</span>
+            <span class="info-tag">最佳季节：6月-9月</span>
+            <span class="info-tag">体验时长：1-3小时</span>
+            <span class="info-tag">价格：100-300元/小时</span>
+        </div>
+
+        <div class="h-card">
+            <h2>草原骑马 · 灵魂之旅</h2>
+            <p>骑马是体验草原文化最直接、最深入的方式。当你跨上马背，手握缰绳，迎着草原的风缓缓前行——脚下是无边的绿色，头顶是湛蓝的天空，远处是连绵的丘陵和成群的牛羊。这一刻，你不再是匆匆的游客，而是草原的孩子。</p>
+            <p>在赤峰，无论是乌兰布统的欧式草原，还是贡格尔的原始牧场，都提供完善的骑马体验服务。从零基础的初学者到经验丰富的骑手，都能找到适合自己的路线。专业的蒙古族马倌会全程陪同，教你最基本的骑马技巧，让你在安全的环境中感受驰骋草原的快乐。</p>
+            <div class="gallery">
+                <img src="./image/2.jpg" alt="骑马1">
+                <img src="./image/4.jpg" alt="骑马2">
+                <img src="./image/5.jpg" alt="骑马3">
+            </div>
+        </div>
+
+        <div class="h-card">
+            <h2>推荐骑马地点</h2>
+            <div class="location-grid">
+                <div class="loc-card">
+                    <h4>乌兰布统草原</h4>
+                    <p>赤峰最成熟的骑马体验区，马匹经过专业训练性格温顺，路线覆盖草原、白桦林和湖泊，风景多样。提供半小时到全天的多种套餐。</p>
+                </div>
+                <div class="loc-card">
+                    <h4>贡格尔草原</h4>
+                    <p>相比乌兰布统更为宁静原始，可以在牧民的带领下深入草原腹地，体验真正的游牧骑马生活。适合追求深度体验的旅行者。</p>
+                </div>
+                <div class="loc-card">
+                    <h4>灯笼河草原</h4>
+                    <p>位于翁牛特旗，是赤峰新兴的骑马目的地。草原开阔平坦，非常适合初学者练习骑马，性价比高。</p>
+                </div>
+                <div class="loc-card">
+                    <h4>玉龙沙湖骑骆驼</h4>
+                    <p>除了骑马，在玉龙沙湖还可以体验骑骆驼穿越沙漠的独特感受，沙海驼铃是赤峰独有的旅行记忆。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="h-card">
+            <h2>骑马小贴士</h2>
+            <ul>
+                <li>穿长裤和运动鞋，不要穿裙子或拖鞋骑马</li>
+                <li>上马前认真听取马倌的安全讲解，了解基本指令</li>
+                <li>不要从马的后方靠近，以免被踢到</li>
+                <li>骑马时保持放松，身体随马的节奏自然起伏</li>
+                <li>不要大声喊叫或做出突然动作惊吓马匹</li>
+                <li>初次骑马建议选择30分钟至1小时的短程体验</li>
+                <li>手机和相机务必挂绳固定，防止掉落</li>
+                <li>高血压、心脏病患者和孕妇不建议骑马</li>
+            </ul>
+        </div>
+
+        
+<a href="index.html" class="back-home">← 返回首页</a>
+    </div>
+</body>
+</html>

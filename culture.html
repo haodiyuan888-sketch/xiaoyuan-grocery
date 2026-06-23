@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蒙古族文化 - 赤峰文旅</title>
+    <link rel="stylesheet" href="./css/demoForHomework.css">
+    <style>
+        .page-wrap { max-width: 1040px; margin: 62px auto 0; padding: 40px 20px; }
+        .hero { position: relative; border-radius: 16px; overflow: hidden; margin-bottom: 30px; }
+        .hero img { width: 100%; height: 380px; object-fit: cover; display: block; }
+        .hero .title { position: absolute; bottom: 0; left: 0; right: 0; padding: 60px 40px 30px; background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: #fff; }
+        .hero .title h1 { font-size: 2.4rem; margin-bottom: 4px; }
+        .hero .title span { font-size: 0.95rem; opacity: 0.9; }
+        .culture-block { background: #fff; border-radius: 16px; margin-bottom: 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); overflow: hidden; display: flex; }
+        .culture-block:nth-child(even) { flex-direction: row-reverse; }
+        .culture-block img { width: 340px; min-height: 260px; object-fit: cover; flex-shrink: 0; }
+        .culture-block .info { padding: 30px 32px; display: flex; flex-direction: column; justify-content: center; }
+        .culture-block .info h2 { color: #1a3a2a; font-size: 1.5rem; margin-bottom: 10px; }
+        .culture-block .info p { color: #555; line-height: 1.9; }
+        .nav-top { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 28px; background: #fff; border-radius: 14px; padding: 16px 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
+        .nav-top a { text-decoration: none; color: #5c4d3c; padding: 6px 14px; border-radius: 8px; font-size: 0.92rem; transition: all 0.2s ease; border: 1px solid #e8d5b0; }
+        .nav-top a:hover { background: #daa520; color: #fff; border-color: #daa520; }
+        @media (max-width: 768px) {
+            .page-wrap { padding: 20px 12px; }
+            .hero img { height: 240px; }
+            .culture-block, .culture-block:nth-child(even) { flex-direction: column; }
+            .culture-block img { width: 100%; height: 220px; }
+            .culture-block .info { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+<div class="side-panel side-left"><div class="side-section"><h4>📍 快速导航</h4><a href="index.html" class="side-nav-item">🏠 回到首页</a><a href="index.html#section1" class="side-nav-item">🌿 草原风情</a><a href="index.html#section2" class="side-nav-item">🎯 文旅锦囊</a><a href="index.html#section3" class="side-nav-item">⭐ 更多推荐</a><a href="guide-travel.html" class="side-nav-item">🗺️ 旅游指南</a></div><div class="side-section"><h4>🏷️ 热门标签</h4><div class="side-tags"><a href="wulanbutong.html">乌兰布统</a><a href="ashatu.html">阿斯哈图</a><a href="dalinuoer.html">达里诺尔</a><a href="food.html#kaoyang">烤全羊</a><a href="nadamu.html">那达慕</a><a href="hongshan-wenhua.html">红山文化</a><a href="horse-riding.html">骑马</a><a href="keshiketeng-wenquan.html">温泉</a><a href="culture.html#menggubao">蒙古包</a></div></div></div><div class="side-panel side-right"><div class="side-section"><h4>💡 旅游贴士</h4><div class="tip-mini"><p>🕐 最佳季节：6-10月</p><p>🌡️ 夏季均温：20°C</p><p>🧥 早晚温差大备外套</p><p>📸 日出日落最出片</p></div></div><button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">⬆ 回到顶部</button></div>
+    <div class="navi">
+        <div class="logoInfo"><div><a href="index.html"><img class="logo" src="./image/辽阔内蒙.png" alt="logo"></a></div><div><span class="logotext">赤峰文旅</span></div></div>
+        <ul class="nav-links">
+<li><a href="index.html">首页</a></li><li><a href="index.html#section1">草原风情</a></li><li><a href="index.html#section2">文旅锦囊</a></li><li><a href="index.html#section3">更多推荐</a></li><li><a href="gallery.html">影像赤峰</a></li><li><a href="food.html">特色美食</a></li><li><a href="guide-travel.html">旅游指南</a></li><li><a href="services.html">旅游服务</a></li>
+        </ul>
+    </div>
+
+    <div class="page-wrap">
+
+        <div class="hero">
+            <img src="./image/那达慕大会.png" alt="蒙古族文化">
+            <div class="title"><h1>蒙古族文化</h1><span>草原上的千年传承，游牧民族的智慧瑰宝</span></div>
+        </div>
+
+        <div class="nav-top">
+            <a href="#nadamu">那达慕</a><a href="#matouqin">马头琴</a><a href="#menggubao">蒙古包</a><a href="#fushi">服饰</a><a href="#aobao">祭敖包</a><a href="#cixiu">刺绣</a>
+        </div>
+
+        <div class="culture-block" id="nadamu">
+            <img src="./image/那达慕大会.png" alt="那达慕大会">
+            <div class="info">
+                <h2>那达慕大会 · 草原上的奥林匹克</h2>
+                <p>"那达慕"在蒙古语中意为"娱乐、游戏"，是蒙古族历史最悠久、规模最盛大的传统节日。每年七八月间，辽阔的草原上骏马奔腾、力士角力、箭矢如风。核心竞技"男儿三艺"——赛马展示了人马合一的默契与速度、摔跤（搏克）体现了草原力士的勇武与技巧、射箭考验了骑手的沉着与精准。那达慕已有八百余年历史，2006年被列入国家级非物质文化遗产。如今的那达慕不仅是体育盛会，更是集歌舞表演、美食品鉴、商贸交流于一体的草原文化盛宴。</p>
+            </div>
+        </div>
+
+        <div class="culture-block" id="matouqin">
+            <img src="./image/马头琴.png" alt="马头琴">
+            <div class="info">
+                <h2>马头琴 · 悠扬的草原天籁</h2>
+                <p>马头琴是蒙古族最具代表性的传统拉弦乐器，因琴杆上端雕刻精美的马头而得名。琴身用优质木材制作，琴弦和琴弓均用马尾制成。音色深沉悠扬、如泣如诉，低音区浑厚如草原的风声、高音区明亮如骏马的嘶鸣。民间流传着这样一个动人传说：牧人为了纪念心爱的白马，用马骨、马皮和马尾制作了世界上第一把马头琴。2006年马头琴音乐被列入国家级非物质文化遗产，2009年蒙古族马头琴艺术被联合国教科文组织列入人类非物质文化遗产代表作名录。</p>
+            </div>
+        </div>
+
+        <div class="culture-block" id="menggubao">
+            <img src="./image/蒙古包.png" alt="蒙古包">
+            <div class="info">
+                <h2>蒙古包 · 游牧民族的智慧结晶</h2>
+                <p>蒙古包是蒙古族牧民世代居住的传统移动式住所，由木质骨架和毛毡覆盖而成。圆形结构具有极佳的抗风能力——草原上狂风大作时，蒙古包纹丝不动；内部空气流通设计使冬暖夏凉。一顶蒙古包可在数小时内完成搭建或拆卸，完美适应了游牧生活的需要。包内布局有严格规范：正中央为火炉，正北供奉神位，西侧为男主人区域，东侧为女主人和厨房区域。蒙古包不仅是居住空间，更是蒙古族宇宙观的体现——圆形的天窗象征天空、圆形的包体象征大地。2008年蒙古包营造技艺被列入国家级非物质文化遗产。</p>
+            </div>
+        </div>
+
+        <div class="culture-block" id="fushi">
+            <img src="./image/蒙古族服饰.png" alt="蒙古族服饰">
+            <div class="info">
+                <h2>蒙古族服饰 · 华丽的民族瑰宝</h2>
+                <p>蒙古族服饰以长袍、腰带、皮靴和头饰为核心，构成了独具特色的服饰体系。长袍宽大舒适，便于骑马和劳作；腰带既是装饰又兼具实用功能；皮靴耐磨防寒，适应草原环境。女子头饰尤为华丽精美，多用金、银、珊瑚、松石、玛瑙等珍贵材料精工制作，一顶完整的头饰可重达数公斤，是家族财富和地位的象征。2008年蒙古族服饰被列入国家级非物质文化遗产名录。在重要节庆和婚礼上，盛装的蒙古族男女宛如草原上流动的艺术品，展现了这一古老民族的审美与技艺巅峰。</p>
+            </div>
+        </div>
+
+        <div class="culture-block" id="aobao">
+            <img src="./image/祭敖包.png" alt="祭敖包">
+            <div class="info">
+                <h2>祭敖包 · 古老的祈福仪式</h2>
+                <p>敖包是草原上用石块和柳枝垒砌的圆形塔形建筑，通常建在山顶或高地之上，是蒙古族祭祀天地山川、祈求风调雨顺的圣地。每年春秋两季，牧民们身着盛装从四面八方赶来，在敖包前献上洁白的哈达、新鲜的奶食和美酒，顺时针绕行敖包三周，同时向天空抛洒牛奶和酒，口中念诵祝祷词，表达对自然万物的敬畏和对美好生活的祈愿。祭敖包仪式源于古老的萨满教自然崇拜，后与藏传佛教融合，至今仍是草原上最庄严神圣的仪式。2006年，祭敖包被列入国家级非物质文化遗产名录。</p>
+            </div>
+        </div>
+
+        <div class="culture-block" id="cixiu">
+            <img src="./image/蒙古族刺绣.png" alt="蒙古族刺绣">
+            <div class="info">
+                <h2>蒙古族刺绣 · 指尖上的精美艺术</h2>
+                <p>蒙古族刺绣以色彩鲜艳、针法粗犷而富于变化著称。多用金银线和彩色丝线，在服饰、靴帽、荷包、马鞍垫等物品上绣出花草纹、云纹、盘肠纹、犄纹等富有民族特色的吉祥图案。蒙古族妇女从小学习刺绣，一针一线之间倾注了对生活的热爱和对家人的祝福。刺绣图案中蕴含着丰富的文化密码——云纹象征吉祥如意、盘肠纹寓意连绵不断、犄纹代表五畜兴旺。2008年蒙古族刺绣被列入国家级非物质文化遗产名录。如今这一古老技艺在传承中不断创新，成为蒙古族文化走向世界的一张精美名片。</p>
+            </div>
+        </div>
+
+        
+<a href="index.html" class="back-home">← 返回首页</a>
+    </div>
+</body>
+</html>
